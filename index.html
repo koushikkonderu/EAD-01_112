@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SignUp Page</title>
+</head> 
+<body>
+    <div class="login-container"> 
+        <h2>SignUp Page</h2>
+        <form >
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <label for="rollnumber">Roll Number: </label>
+            <input type="text" id="rollnumber" name="rollnumber" maxlength="12" pattern="\d{12}" required>
+            <br><br>
+            <label for="phoneno">Phone Number: </label>
+            <input type="number" id="phoneno" name="phoneno" required>
+            <label for="dob">Date Of Birth: </label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            <label for="gender">Gender: </label>
+            <select name="gender" id="gender">
+                <option value="" disabled selected>Select Your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="prefer-not-to-say">Prefer Not To Say</option>
+            </select>
+            <br><br>
+            <button type="submit">Sign Up</button>
+
+        </form>
+
+    </div>
+</body>
+</html>
